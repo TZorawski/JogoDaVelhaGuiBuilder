@@ -107,27 +107,57 @@
   </Layout>
   <SubComponents>
     <Component class="javax.swing.JButton" name="bt12">
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="bt12MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="bt13">
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="bt13MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="bt11">
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="bt11MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="bt22">
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="bt22MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="bt23">
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="bt23MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="bt21">
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="bt21MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="bt32">
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="bt32MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="bt33">
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="bt33MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="bt31">
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="bt31MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btAcao">
       <Properties>
         <Property name="text" type="java.lang.String" value="Reiniciar"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btAcaoMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="tfAviso">
       <Properties>

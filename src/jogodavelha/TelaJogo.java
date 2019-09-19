@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package jogodavelha;
 
-/**
- *
- * @author thais
- */
 public class TelaJogo extends javax.swing.JFrame {
 
     /**
@@ -41,7 +32,66 @@ public class TelaJogo extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        bt12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bt12MouseClicked(evt);
+            }
+        });
+
+        bt13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bt13MouseClicked(evt);
+            }
+        });
+
+        bt11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bt11MouseClicked(evt);
+            }
+        });
+
+        bt22.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bt22MouseClicked(evt);
+            }
+        });
+
+        bt23.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bt23MouseClicked(evt);
+            }
+        });
+
+        bt21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bt21MouseClicked(evt);
+            }
+        });
+
+        bt32.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bt32MouseClicked(evt);
+            }
+        });
+
+        bt33.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bt33MouseClicked(evt);
+            }
+        });
+
+        bt31.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bt31MouseClicked(evt);
+            }
+        });
+
         btAcao.setText("Reiniciar");
+        btAcao.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btAcaoMouseClicked(evt);
+            }
+        });
 
         tfAviso.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         tfAviso.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -117,6 +167,131 @@ public class TelaJogo extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void bt11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt11MouseClicked
+        // TODO add your handling code here:
+        if (bt11.isEnabled() == true){
+            this.clicarBotao(1, 1, bt11);
+        }
+    }//GEN-LAST:event_bt11MouseClicked
+
+    private void bt12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt12MouseClicked
+        // TODO add your handling code here:
+        if (bt12.isEnabled() == true){
+            this.clicarBotao(1, 2, bt12);
+        }
+    }//GEN-LAST:event_bt12MouseClicked
+
+    private void bt13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt13MouseClicked
+        // TODO add your handling code here:
+        if (bt13.isEnabled() == true){
+            this.clicarBotao(1, 3, bt13);
+        }
+    }//GEN-LAST:event_bt13MouseClicked
+
+    private void bt21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt21MouseClicked
+        // TODO add your handling code here:
+        if (bt21.isEnabled() == true){
+            this.clicarBotao(2, 1, bt21);
+        }
+    }//GEN-LAST:event_bt21MouseClicked
+
+    private void bt22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt22MouseClicked
+        // TODO add your handling code here:
+        if (bt22.isEnabled() == true){
+            this.clicarBotao(2, 2, bt22);
+        }
+    }//GEN-LAST:event_bt22MouseClicked
+
+    private void bt23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt23MouseClicked
+        // TODO add your handling code here:
+        if (bt23.isEnabled() == true){
+            this.clicarBotao(2, 3, bt23);
+        }
+    }//GEN-LAST:event_bt23MouseClicked
+
+    private void bt31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt31MouseClicked
+        // TODO add your handling code here:
+        if (bt31.isEnabled() == true){
+            this.clicarBotao(3, 1, bt31);
+        }
+    }//GEN-LAST:event_bt31MouseClicked
+
+    private void bt32MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt32MouseClicked
+        // TODO add your handling code here:
+        if (bt32.isEnabled() == true){
+            this.clicarBotao(3, 2, bt32);
+        }
+    }//GEN-LAST:event_bt32MouseClicked
+
+    private void bt33MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt33MouseClicked
+        // TODO add your handling code here:
+        if (bt33.isEnabled() == true){
+            this.clicarBotao(3, 3, bt33);
+        }
+    }//GEN-LAST:event_bt33MouseClicked
+
+    private void btAcaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btAcaoMouseClicked
+        // TODO add your handling code here:
+        this.limpaBotao(bt11);
+        this.limpaBotao(bt12);
+        this.limpaBotao(bt13);
+        this.limpaBotao(bt21);
+        this.limpaBotao(bt22);
+        this.limpaBotao(bt23);
+        this.limpaBotao(bt31);
+        this.limpaBotao(bt32);
+        this.limpaBotao(bt33);
+        
+        jogo.iniciarJogo();
+        this.casasPreenchidas = 0;
+        tfAviso.setText(msgJogadorVez + jogo.getStringX());
+    }//GEN-LAST:event_btAcaoMouseClicked
+
+    private void limpaBotao (javax.swing.JButton bt) {
+        bt.setEnabled(true);
+        bt.setText("");
+    }
+    
+    private void clicarBotao (int lin, int col, javax.swing.JButton bt) {
+        this.casasPreenchidas += 1;
+        
+        // jogadas impares são do jogador X
+        if (this.casasPreenchidas % 2 == 1) {
+            jogo.jogar(lin-1, col-1, jogo.getX());
+            bt.setText(jogo.getStringX());
+            
+            tfAviso.setText(msgJogadorVez + jogo.getStringO()); // Atualiza mensagem do aviso
+            
+        // jogadas pares são do jogador O
+        } else {
+            jogo.jogar(lin-1, col-1, jogo.getO());
+            bt.setText(jogo.getStringO());
+            
+            tfAviso.setText(msgJogadorVez + jogo.getStringX()); // Atualiza mensagem do aviso
+        }
+        
+        bt.setEnabled(false);
+        
+        boolean verificador = jogo.verificaJogo();
+        System.out.println("ver " + verificador);
+        if (verificador == true) {
+            System.out.println("entrou3");
+            switch (jogo.getGanhador()) {
+                case 0:
+                    tfAviso.setText(this.msgEmpate);
+                    break;
+                case 1:
+                    tfAviso.setText(this.msgGanhador + jogo.getStringX());
+                    break;
+                case 8:
+                    tfAviso.setText(this.msgGanhador + jogo.getStringO());
+                    break;
+                default:
+                    System.out.println("case " + jogo.getGanhador());
+            }
+        }
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -165,4 +340,15 @@ public class TelaJogo extends javax.swing.JFrame {
     private javax.swing.JButton btAcao;
     private javax.swing.JTextField tfAviso;
     // End of variables declaration//GEN-END:variables
+
+    // Outras variáveis
+    JogoDaVelha jogo = new JogoDaVelha();
+    private int casasPreenchidas = 0;
+    String msgJogadorVez = "É a vez do jogador ";
+    String msgGanhador = "O ganhador é o jogador ";
+    String msgEmpate = "O jogo empatou";
+
+
+
+
 }
